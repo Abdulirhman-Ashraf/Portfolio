@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+#Home {
+    background-image: linear-gradient(100deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    height: 710px;
+    padding: 0 40px;
+    padding-bottom: 245px;
+}
+
+/* home page */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    transition: .2s linear;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    font-size: 25px;
+    padding-left: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav ul li {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.nav a {
+    padding: 0;
+}
+
+.nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#Home p,
+#Home h2,
+#Home h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.842);
+
+}
+
+#Home p {
+    font-size: 30px;
+}
+
+#Home h2 {
+    font-size: 55px;
+    margin-left: 30px;
+
+}
+
+#Home h3 {
+    color: rgba(0, 0, 0, 0.495);
+}
+
+i {
+
+    color: rgba(0, 0, 0, 0.794);
+    font-size: 30px;
+}
+
+.left {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer ul {
+    text-align: center;
+
+}
+
+
+#Home a {
+    color: aliceblue;
+
+}
+
+/* about page */
+
+#About {
+    padding: 100px 10px;
+    background-color: #eee;
+}
+
+#About a {
+    color: black;
+}
+
+#About .logo h2 {
+    font-size: 50px;
+}
+
+#About .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+    padding: 50px 30px;
+    margin: 70px;
+}
+
+#About .section h2,
+#About .section p {
+    margin-bottom: 40px;
+}
+
+#About .section p {
+    font-size: 18px;
+}
+
+#About .section h2 {
+    padding: 10px;
+    width: 150px;
+    border: 3px solid black;
+}
+
+#About ul li i {
+    text-align: center;
+}
+
+.footer ul li i {
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.before,
+.after {
+    width: 400px;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+/* projects page */
+#Projects {
+    padding: 0 40px;
+    max-height: 200vh;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #eee;
+    border-bottom: 2px solid;
+    width: 100%;
+    height: fit-content;
+}
+
+a {
+    color: black
+}
+
+#Projects .h2 {
+    text-align: center;
+    margin: auto;
+    padding: 15px 5px;
+    width: 350px;
+    margin-bottom: 90px;
+    border: 3px solid black;
+}
+
+#collection {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+    height: 280px;
+    transition: .5s linear;
+    border-radius: 30px;
+}
+
+img:hover {
+    opacity: 0.4;
+}
+
+#collection div {
+    position: relative;
+    transition: .5s linear;
+    backface-visibility: hidden;
+    margin: auto;
+    position: relative;
+}
+
+#show {
+
+    text-align: center;
+    margin-left: 650px;
+}
+
+.visit {
+    font-size: 30px;
+    position: absolute;
+    right: 0%;
+    bottom: 180px;
+    margin: auto;
+    opacity: 0;
+    width: 120px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    background-color: #18783c;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.visit:hover {
+    opacity: 1;
+
+}
+
+#collection div :hover~.visit {
+    opacity: 1;
+}
+
+.showMore {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* contact page */
+#Contact {
+    padding: 0 40px;
+    height: 711px;
+    margin: auto;
+    text-align: center;
+    background-color: #eee;
+}
+
+#Contact a {
+    color: black;
+}
+
+#Contact .section h2 {
+    margin: 30px auto;
+    padding: 10px;
+    width: 250px;
+    border: 3px solid black;
+}
+
+input,
+textarea {
+    width: 500px;
+    border: none;
+    outline: none;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 19px 0;
+    padding: 10px;
+    background-color: #eee;
+}
+
+button {
+    padding: 5px 30px;
+    margin: 30px 20px;
+    border: none;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transition: .1s linear;
+}
+
+button:hover {
+    background-color: #ffffffbd;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+input:hover {
+    background-color: #ffffffc0;
+}
+
+textarea:hover {
+    background-color: #ffffffc0;
+
+}
+
+@media(max-width:1290px) {
+    #Home {
+        background: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 80%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+        height: 800px;
+        width: fit-content;
+    }
+    #Home .nav h2{
+        width: 100%;
+        text-align: center;
+    }
+    #About .nav h2{
+        width: 100%;
+        text-align: center;
+    }
+    #About .section {
+
+        height: 100%;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+    #About{
+        padding: 10px;
+    }
+    .before,
+    .after {
+        width: 40px;
+        padding: 1px;
+    }
+
+    .nav {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    .nav li {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    a {
+        font-size: 25px;
+        padding-left: 10px;
+        margin-left: 0px;
+    }
+
+    .left {
+        margin-top: 80px;
+
+    }
+
+    #Home a {
+        color: black;
+
+    }
+    #Home h2 {
+        font-size: 45px;
+        margin-left: 30px;
+    
+    }
+    .nav ul li {
+        margin-left: 0px;
+    }
+    /* projects page */
+    img{
+        width:320px ;
+        height: 200px;
+    }
+    #show {
+
+        text-align: center;
+        margin-left: 90px;
+    }
+    #Projects .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav ul{
+        text-align: center;
+    }
+    #Projects .nav ul li{
+        width: 100%;
+    }
+    #Home .nav ul li{
+        width: 100%;
+    }
+    #About .nav ul li{
+        width: 100%;
+    }
+    #Contact .nav ul li{
+        width: 100%;
+    }
+    #Projects .h2 {
+        font-size:25px ;
+        padding: 15px 20px;
+        width: 300px;
+        margin: 50px 0px;
+        text-align: center;
+    }
+    #Projects {
+        padding: 0 20px;
+        max-height: 200vh;
+        margin: 0 auto;
+    }
+    input,
+textarea {
+    width: 300px;
+}
+#Contact {
+    padding: 0 40px;
+    height: 951px;
+    margin: auto;
+    text-align: center;
+    background-color: #eee;
+}
+}
