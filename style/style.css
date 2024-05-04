@@ -217,7 +217,6 @@ img:hover {
 }
 
 #show {
-
     text-align: center;
     margin-left: 650px;
 }
@@ -251,7 +250,7 @@ img:hover {
 }
 
 .showMore {
-    display: block;
+    display: flex;
 }
 
 .hidden {
