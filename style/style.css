@@ -91,11 +91,10 @@ a {
 
 }
 #Home .left h2{
-    width: 17ch;
+    width: 20ch;
     overflow: hidden;
     white-space: nowrap;
-    animation:cursor-color .7s 1s , cool 5s steps(18) 1s both ;
-    border-right: solid 1px black;
+    animation: cool 5s steps(20) 1s both infinite;
 }
 @keyframes cool{
     from{
@@ -103,20 +102,11 @@ a {
 
     }
     to{
-        width: 18ch;
+        width: 20ch;
 
     }
 }
-@keyframes cursor-color{
-    from{
-        border-right-color:  rgb(0, 0, 0);
 
-    }
-    to{
-        border-right-color:  rgba(255, 255, 255, 0);
-
-    }
-}
 #Home h3 {
     color: rgba(0, 0, 0, 0.495);
 }
