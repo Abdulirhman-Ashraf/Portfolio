@@ -95,6 +95,7 @@ a {
     overflow: hidden;
     white-space: nowrap;
     animation: cool 5s steps(20) 1s both infinite;
+    transition: all .3s linear;
 }
 @keyframes cool{
     from{
@@ -106,7 +107,9 @@ a {
 
     }
 }
-
+#Home .left h2:hover{
+    animation:none
+}
 #Home h3 {
     color: rgba(0, 0, 0, 0.495);
 }
