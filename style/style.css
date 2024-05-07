@@ -234,6 +234,7 @@ i {
 /* projects page */
 #Projects {
     padding: 0px 40px;
+    padding-bottom: 140px !important;
     margin: 0px auto !important;
     max-height: 200vh;
 }
