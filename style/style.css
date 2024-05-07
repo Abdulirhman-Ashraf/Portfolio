@@ -91,7 +91,7 @@ a {
 
 }
 #Home .left h2{
-    width: 18ch;
+    width: 17ch;
     overflow: hidden;
     white-space: nowrap;
     animation:cursor-color .7s 1s infinite, cool 5s steps(18) 1s both ;
@@ -462,6 +462,16 @@ font-size: 24px;
     #show {
         margin: 0px auto;
 
+    }
+    img {
+        transition: .1s all linear;
+  
+    }
+    img:hover {
+        opacity: 0.4;
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px 1px black;
+    
     }
 }
 
