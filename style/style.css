@@ -108,7 +108,8 @@ a {
     }
 }
 #Home .left h2:hover{
-    animation:none
+    animation:none;
+
 }
 #Home h3 {
     color: rgba(0, 0, 0, 0.495);
@@ -232,8 +233,8 @@ i {
 
 /* projects page */
 #Projects {
-    padding: 0 40px;
-    margin: 30px auto;
+    padding: 0px 40px;
+    margin: 0px auto !important;
     max-height: 200vh;
 }
 
@@ -287,9 +288,9 @@ img:hover {
 
 #show {
     text-align: center;
-    margin: auto;
+    margin: 90px auto !important;
     display: block !important;
-    margin-bottom: 90px !important;
+
 }
 
 
