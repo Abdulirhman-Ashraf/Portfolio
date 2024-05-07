@@ -396,7 +396,8 @@ textarea:hover {
     height: fit-content !important;
 }
 #Home .left h2{
-font-size: 30px;
+font-size: 28px;
+margin-left: 10px;
 }
 #Home .left p{
 font-size: 24px;
