@@ -94,7 +94,7 @@ a {
     width: 17ch;
     overflow: hidden;
     white-space: nowrap;
-    animation:cursor-color .7s 1s infinite, cool 5s steps(18) 1s both ;
+    animation:cursor-color .7s 1s , cool 5s steps(18) 1s both ;
     border-right: solid 1px black;
 }
 @keyframes cool{
