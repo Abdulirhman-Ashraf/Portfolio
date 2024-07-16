@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+    
   </head>
   <body><div class="container">
     <div id="Contact">
@@ -31,14 +33,17 @@
       <form>
         <input type="text" name="name" placeholder=" your name..." /><br>
         <input type="email" name="email" placeholder=" email..." /><br>
-        <textarea
+        <textarea 
+        onkeydown="textLimit()"
           name="text"
           cols="30"
           rows="10"
           placeholder=" message..."
+          maxlength="250"
         ></textarea>
+        <p class="max"> </p>
         <br>
-        <button type="submit">Send</button>
+        <button type="submit" id="send">Send</button>
         <button type="reset">Reset</button>
       </form>
     </div>
